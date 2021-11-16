@@ -4,7 +4,7 @@ pipeline {
         stage("build") {
             steps {
               echo 'building the application'
-              sh 'node -v'
+              sh 'npm inslall'
 
             }
         
