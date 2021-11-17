@@ -13,6 +13,7 @@ pipeline {
                 }
 
             }
+
         }
         stage("build") {
             steps {
@@ -22,7 +23,6 @@ pipeline {
 
             }
 
-        
         }
         stage("Test") {
             steps {
@@ -32,7 +32,6 @@ pipeline {
 
             }
             
-        
         }
         stage("Deploy") {
             steps {
@@ -42,10 +41,8 @@ pipeline {
 
             }
             
-        
         }
 
-
-
     } 
+    
 }
