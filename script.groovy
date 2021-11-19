@@ -1,7 +1,7 @@
 def buildApp() {
     echo 'building the application'
     echo 'The app is buileded now be happy!'
-    sh 'npm -version'
+    sh 'npm install'
 }
 
 def testApp() {
