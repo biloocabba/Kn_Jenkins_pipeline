@@ -5,7 +5,7 @@ def buildApp() {
     
     sh 'node -v'
     sh'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash'
-    sh '. ~/.nvm/nvm.sh'
+    sh 'source ~/.nvm/nvm.sh'
     sh 'nvm install 14.18.1'
     //sh 'npm install '
     //sh 'npm  start'
