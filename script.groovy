@@ -1,8 +1,11 @@
 def buildApp() {
     echo 'building the application'
+    
     echo 'The app is buileded now be happy!'
-   
-    sh 'nvm  install 14.18.1 -g'
+    sh 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash'
+    sh '. ~/.nvm/nvm.sh'
+    sh 'node  install  14.18.1'
+ 
 }
 
 def testApp() {
