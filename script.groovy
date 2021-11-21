@@ -1,7 +1,7 @@
 def buildApp() {
     echo 'building the application'
     echo 'The app is buileded now be happy!'
-    sh'sudo mkdir /usr/local/nvm'
+    sh'mkdir /usr/local/nvm'
     sh'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh |NVM_DIR=/usr/local/nvm bash'
     sh'. /usr/local/nvm/nvm.sh'
    
