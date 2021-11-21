@@ -1,11 +1,11 @@
 def buildApp() {
     echo 'building the application'
     echo 'The app is buileded now be happy!'
-    sh'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash'
-    sh'. ~/.nvm/nvm.sh'
-    sh'. ~/.profile'
-    sh'. ~/.bashrc'
-    sh 'nvm  install 14.18.1'
+    sh'sudo mkdir /usr/local/nvm'
+    sh'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh |NVM_DIR=/usr/local/nvm bash'
+    sh'. /usr/local/nvm/nvm.sh'
+   
+    sh 'nvm  install 14.18.1 -g'
 }
 
 def testApp() {
