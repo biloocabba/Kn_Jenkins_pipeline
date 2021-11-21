@@ -3,9 +3,9 @@ def buildApp() {
     
     echo 'The app is buileded now be happy!'
     
-    
-    sh 'npm install '
-    sh 'npm  start'
+    sh 'node -v'
+    //sh 'npm install '
+    //sh 'npm  start'
  
 }
 
